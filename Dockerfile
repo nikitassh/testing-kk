@@ -4,4 +4,4 @@ WORKDIR /opt/keycloak
 
 EXPOSE 8080
 
-CMD sh -c "start-dev --http-port=${PORT:-8080} --http-host=0.0.0.0"
+CMD ["kc.sh", "start-dev", "--http-port", "8080", "--http-host", "0.0.0.0"]
