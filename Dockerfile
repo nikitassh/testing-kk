@@ -4,4 +4,5 @@ WORKDIR /opt/keycloak
 
 EXPOSE 8080
 
-CMD ["kc.sh", "start-dev", "--http-port", "8080", "--http-host", "0.0.0.0"]
+# Используем команду для запуска Keycloak
+CMD ["kc", "start-dev", "--http-port", "${PORT:-8080}", "--http-host", "0.0.0.0"]
