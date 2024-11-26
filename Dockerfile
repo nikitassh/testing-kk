@@ -12,5 +12,4 @@ EXPOSE 8080
 # ENV PROXY_ADDRESS_FORWARDING=true
 # ENV KEYCLOAK_HTTPS_PORT=8443
 
-
 CMD ["start-dev", "--http-port", "8080", "--http-host", "0.0.0.0"]
